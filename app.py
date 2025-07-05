@@ -87,6 +87,14 @@ if st.session_state.devuelta >= 0 and st.session_state.calculado:
         st.success("✅ Venta registrada correctamente.")
         st.session_state.venta_registrada = True
 
+        # Limpiar estados
+        for producto in precios:
+            st.session_state[producto] = 0
+        st.session_state["pago_cliente"] = 0
+        st.session_state.total = 0
+        st.session_state.devuelta = 0
+        st.session_state.calculado = False
+
 # ESTADÍSTICAS
 st.markdown("---")
 if st.button("📊 Ver estadísticas"):
