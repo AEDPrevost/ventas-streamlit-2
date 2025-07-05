@@ -23,8 +23,8 @@ precios = {
     "PopCombo": 75,
     "HotCombo": 125,
     "FullCombo": 150,
-    "HotDog": 50,
-    "Palomitas": 100,
+    "HotDog": 100,
+    "Palomitas": 50,
     "Refresco": 30
 }
 
