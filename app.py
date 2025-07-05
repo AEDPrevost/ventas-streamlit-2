@@ -86,7 +86,7 @@ if st.session_state.devuelta >= 0 and st.session_state.calculado:
         set_with_dataframe(worksheet, updated)
         st.success("✅ Venta registrada correctamente.")
         st.session_state.venta_registrada = True
-        st.experimental_rerun()
+        st.rerun()
 
 # ESTADÍSTICAS
 st.markdown("---")
