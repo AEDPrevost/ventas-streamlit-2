@@ -18,7 +18,7 @@ SHEET_URL = "https://docs.google.com/spreadsheets/d/194LULN6JNb-QR7GAvLEqS6ISCc1
 spreadsheet = client.open_by_url(SHEET_URL)
 worksheet = spreadsheet.get_worksheet(0)
 
-# PRECIOS
+# PRECIOS ACTUALIZADOS
 precios = {
     "PopCombo": 75,
     "HotCombo": 125,
