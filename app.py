@@ -86,14 +86,7 @@ if st.session_state.devuelta >= 0 and st.session_state.calculado:
         set_with_dataframe(worksheet, updated)
         st.success("✅ Venta registrada correctamente.")
         st.session_state.venta_registrada = True
-
-        # Limpiar estados
-        for producto in precios:
-            st.session_state[producto] = 0
-        st.session_state["pago_cliente"] = 0
-        st.session_state.total = 0
-        st.session_state.devuelta = 0
-        st.session_state.calculado = False
+        st.experimental_rerun()
 
 # ESTADÍSTICAS
 st.markdown("---")
